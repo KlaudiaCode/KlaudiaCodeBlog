@@ -6,9 +6,13 @@ class ArticlesController < ApplicationController
   def show 
   end
 
-  def index
-    @articles = Article.paginate(page: params[:page], per_page: 3)
-  end
+  # def index
+  #   @articles = Article.paginate(page: params[:page], per_page: 3)
+  # end
+
+  def index 
+    @articles = Search::SearchArticle.new(params).find
+  end 
 
   def new
     @article = Article.new 
