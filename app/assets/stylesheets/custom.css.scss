@@ -1,11 +1,19 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 .navbar {
-  background-color: #000000 !important;
+  background-color: lightcoral !important;
 }
 
 .nav-link {
-  color: white !important;
+  color: rgb(250, 227, 249) !important;
+}
+
+.bg-login {
+  background-color: #f5aeae !important;
+}
+
+.bg-button {
+  background-color: #e83c3c !important;
 }
 
 #logo {
@@ -21,7 +29,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 700px;
 }
 
 /* Sticky Footer Classes */
