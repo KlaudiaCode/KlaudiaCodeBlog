@@ -42,6 +42,10 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
   end
 
+  def gallery
+    @articles = Article.has_image
+  end
+
   private
 
   def set_article

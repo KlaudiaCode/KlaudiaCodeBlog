@@ -1,0 +1,5 @@
+<% @articles.each do |article| %>
+    <%= link_to article do %>
+        <%= image_tag article.image, class: "img_preview"%>
+    <%end%>
+<%end%>
